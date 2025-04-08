@@ -1,0 +1,184 @@
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0.5rem 2rem 0.2rem 2rem;
+    height: 30px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    }
+  
+  .container {
+    padding: 4rem 2rem;
+    font-size: x-large;
+  }
+
+  .content {
+    padding: 10rem 2rem;
+  }
+  
+  .team {
+    padding: 2rem;
+  }
+  
+  .team-member {
+    margin: 1rem;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  #contact {
+    padding: 2rem;
+    background-color: #eaeaea;
+  }
+  
+  #contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  #contact input, #contact textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .faqs {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .faq-item h3 {
+    color: #0077cc;
+    margin-bottom: 0.5rem;
+  }
+ 
+  .social-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .social-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  
+  
+  /* Hover effect for all */
+  .social-icons a:hover {
+    transform: scale(1.1);
+    background-color: #c0c0c0;
+  }
+  
+  /* Make LinkedIn blue */
+  .social-icons a.linkedin {
+    background-color: #0077b5;
+  }
+  
+  /* Optional: slight hover variation for LinkedIn */
+  .social-icons a.linkedin:hover {
+    background-color: #005c8b;
+  }
+  
+  .team {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+}
+
+
+
+.team-member {
+    width: 160px;
+    margin: 10px;
+}
+
+.team-member img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.centre {
+    justify-content: center;
+}
