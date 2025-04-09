@@ -20,4 +20,4 @@ You can see the live version here: [Your Live Site Link](https://your-username.g
 2. Open the folder in your browser or code editor
 
 ## Author
-Snehal 💛
+Snehal 
