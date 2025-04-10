@@ -4,6 +4,58 @@
   <meta charset="UTF-8">
   <title>Gallery - MEA</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .dark-mode .nav-links a {
+      color: #ffffff;
+    }
+
+    .dark-mode .gallery img {
+      filter: brightness(0.8);
+    }
+
+    .dark-mode .gallery img:hover {
+      filter: brightness(1);
+    }
+
+    .dark-mode .toggle-btn-wrapper button {
+      background-color: #ffffff;
+      color: #121212;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .dark-mode .toggle-btn-wrapper button:hover {
+      background-color: #dddddd;
+    }
+
+    .toggle-btn-wrapper {
+      text-align: right;
+      margin: 10px 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .gallery .row-three {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .gallery .row-three img {
+      width: 48%;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,49 +73,22 @@
     </nav>
   </header>
 
+  <!-- Toggle Button -->
+  <div class="toggle-btn-wrapper">
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </div>
+
+  <!-- Gallery Section -->
   <section class="gallery">
     <img src="image/4.png" alt="Image 1" class="row-one">
     <img src="image/5.png" alt="Image 2" class="row-two">
     <div class="row-three">
       <img src="image/6.png" alt="Image 3">
       <img src="image/7.png" alt="Image 4">
-      
     </div>
   </section>
-</body>
-</html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Gallery - MEA</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="download.png" alt="MEA Logo">
-      </div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="team.html">Team</a>
-        <a href="faqs.html">FAQs</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <section class="gallery">
-    <img src="image/4.png" alt="Image 1" class="row-one">
-    <img src="image/5.png" alt="Image 2" class="row-two">
-    <div class="row-three">
-      <img src="image/6.png" alt="Image 3">
-      <img src="image/7.png" alt="Image 4">
-      
-    </div>
-  </section>
+  <!-- Link your app.js script -->
+  <script src="app.js" defer></script>
 </body>
 </html>
