@@ -10,7 +10,8 @@
   <header>
     <nav>
       <div class="logo">
-        <img src="download.png" alt="MEA Logo">
+        <img id="logo-img" src="download.png" alt="MEA Logo" />
+
       </div>
       <div class="nav-links">
         <a href="index.html">Home</a>
@@ -62,118 +63,28 @@
         <p>Department Coordinator</p>
       </div>
     
-      <script src="app.js" defer></script>
+     
 
      
-  <script>
-    // Apply saved theme on load
-    if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark-mode");
-    }
+      <script src="app.js" defer></script>
 
-    // Toggle theme and save preference
-    document.getElementById("dark-mode-toggle")?.addEventListener("click", function () {
-      document.body.classList.toggle("dark-mode");
-      const theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
-      localStorage.setItem("theme", theme);
-    });
-  </script>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-    }
+    body.dark-mode .team {
+  background-color: #000000;
+  color: #ffffff;
+}
 
-    header {
-      background-color: #f0f0f0;
-      padding: 1rem;
-    }
+body.dark-mode .team-member {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
 
-    .nav-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: inherit;
-    }
+body.dark-mode .team-member img {
+  filter: brightness(0.9);
+}
 
-    .toggle-btn-wrapper {
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px 20px;
-    }
-
-    .toggle-btn-wrapper button {
-      padding: 8px 16px;
-      border: none;
-      cursor: pointer;
-      background-color: #000;
-      color: #fff;
-      border-radius: 6px;
-    }
-
-    .team-section {
-      padding: 40px;
-      background-color: #f9f9f9;
-      text-align: center;
-    }
-
-    .team-members {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .member-card {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      width: 200px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .member-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    /* 🌙 DARK MODE STYLES BELOW */
-    body.dark-mode {
-      background-color: #121212;
-      color: #ffffff;
-    }
-
-    body.dark-mode header {
-      background-color: #1f1f1f;
-    }
-
-    body.dark-mode .nav-links a {
-      color: #ffffff;
-    }
-
-    body.dark-mode .toggle-btn-wrapper button {
-      background-color: #ffffff;
-      color: #000000;
-    }
-
-    body.dark-mode .team-section {
-      background-color: #1c1c1c;
-      color: #ffffff;
-    }
-
-    body.dark-mode .member-card {
-      background-color: #2a2a2a;
-      color: #ffffff;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-
-    body.dark-mode .member-card img {
-      filter: brightness(0.9);
-    }
   </style>
 
     

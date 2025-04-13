@@ -5,40 +5,6 @@
   <title>Gallery - MEA</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body.dark-mode {
-      background-color: #121212;
-      color: #ffffff;
-    }
-
-    .dark-mode .nav-links a {
-      color: #ffffff;
-    }
-
-    .dark-mode .gallery img {
-      filter: brightness(0.8);
-    }
-
-    .dark-mode .gallery img:hover {
-      filter: brightness(1);
-    }
-
-    .dark-mode .toggle-btn-wrapper button {
-      background-color: #ffffff;
-      color: #121212;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .dark-mode .toggle-btn-wrapper button:hover {
-      background-color: #dddddd;
-    }
-
-    .toggle-btn-wrapper {
-      text-align: right;
-      margin: 10px 20px;
-    }
 
     .gallery img {
       width: 100%;
@@ -61,7 +27,8 @@
   <header>
     <nav>
       <div class="logo">
-        <img src="download.png" alt="MEA Logo">
+        <img id="logo-img" src="download.png" alt="MEA Logo" />
+
       </div>
       <div class="nav-links">
         <a href="index.html">Home</a>
